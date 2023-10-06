@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Please</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Please Contact Me</h2>
+
+    <section class="centered-section">
+        <div class="container">
+            <div>
+                <label for="Name">Name</label>
+                <input id="name-field" type="text" name="">
+                <button onclick="deleteName()">Delete Name</button>
+                <button onclick="nameSend()">Send Name</button>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input id="email-field" type="email" name="">
+                <button onclick="deleteEmail()">Delete Email</button>
+                <button onclick="emailSend()">Send Email</button>
+            </div> 
+            <div>
+                <label for="Name">Message</label>
+                <input style="width: 200px; height: 50px;" id="message-field" type="text" cols="40" rows="5" name="">
+                <button onclick="deleteMessage()">Delete Message</button>
+                <button onclick="messageSend()">Send Message</button>
+            </div>
+        </div>
+        <div class="reset-div">
+            <button onclick="resetBtn()" class="reset-btn">Reset</button>
+        </div>
+    </section>
+
+    <script src="form.js"></script>
+</body>
+</html>
